@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Pantalla = ({numInput}) => {
+const Pantalla = ({calc, setCalc}) => {
   return (
-    <div className='mt-28 mr-10'>
+    <div className='mt-16 mr-10'>
         <div className='text-right text-gray-500 text-lg'>
-            6000*2/5
+            {calc.numInput}
         </div>
         <div className='text-right text-gray-700 text-5xl'>
-            2400
+            {calc.resultado}
         </div>
     </div>
 

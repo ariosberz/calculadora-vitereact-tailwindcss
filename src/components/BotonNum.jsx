@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BotonNum = ({valor}) => {
+const BotonNum = ({valor,onClick}) => {
   return (
     <button 
     className='bg-white/50 hover:bg-white/75 
@@ -8,7 +8,8 @@ const BotonNum = ({valor}) => {
     font-bold 
     rounded 
     w-14 h-12'
-    onClick={()=>{console.log(valor)}}
+    onClick={onClick}
+    
     >
             {valor}
     </button>

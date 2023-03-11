@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BotonCmd = ({valor}) => {
+const BotonCmd = ({valor, onClick}) => {
   return (
     <button 
     className='
@@ -10,7 +10,7 @@ const BotonCmd = ({valor}) => {
     rounded 
     w-14 h-12
     '
-    onClick={()=>{console.log(valor)}}
+    onClick={onClick}
     >
             {valor}
     </button>
